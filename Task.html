@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solar System Explorer</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"/>
+  <!-- Your custom CSS file -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">☀ SOLAR SYSTEM</a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#nav"
+              aria-controls="nav" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto gap-3">
+          <li class="nav-item"><a class="nav-link" href="#">Inner Planets</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Outer Planets</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://solarsystem.nasa.gov" target="_blank">NASA ↗</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       PAGE TITLE
+  ══════════════════════════════ -->
+  <div class="page-title">
+    <h1>SOLAR SYSTEM EXPLORER</h1>
+    <p>Hover over any planet to reveal its secrets</p>
+  </div>
+
+  <!-- ══════════════════════════════
+       MAIN LAYOUT — left | center | right
+  ══════════════════════════════ -->
+  <div class="solar-wrapper">
+
+    <!-- LEFT column: Mercury, Venus, Earth, Mars -->
+    <div class="planet-list left" id="leftPlanets"></div>
+
+    <!-- CENTER panel: shows planet details on hover -->
+    <div class="center-display" id="centerDisplay">
+      <p class="center-placeholder">
+        ← Hover a planet →<br/><br/>
+        Discover facts about each world in our solar system
+      </p>
+    </div>
+
+    <!-- RIGHT column: Jupiter, Saturn, Uranus, Neptune -->
+    <div class="planet-list right" id="rightPlanets"></div>
+
+  </div>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <span class="hi">☀ SOLAR SYSTEM EXPLORER</span> &nbsp;·&nbsp;
+    8 Planets &nbsp;·&nbsp;
+    Images &amp; Data:
+    <a href="https://solarsystem.nasa.gov" target="_blank"
+       style="color:var(--accent2);text-decoration:none">NASA Solar System</a>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your custom JS file -->
+  <script src="app.js"></script>
+
+</body>
+</html>
